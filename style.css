@@ -1,0 +1,118 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	font-family: florence, cursive;
+}
+#header-nav {
+	background-color: #a7d9c9;
+	border-radius: 0;
+	border: 0;	
+}
+.navbar-brand {
+	padding-top: 25px;
+}
+
+.navbar-brand h1 { /*FOOD, LLC*/
+	font-family: 'Lora', serif;
+	color: #f3bfb3;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 2px 2px black;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #2e3332;
+	text-align: center;
+	margin-right: 10px;
+}
+#nav-list a:hover {
+	background: #DCEDC2;
+}
+#nav-list a span {
+	font-size: 1.8em;
+}
+.container {
+	top: 60px;
+}
+h3#burger, h3#pizza, h3#ramen {
+	text-align: center;
+	color: #445a67;
+}
+#menu {
+	font-family: 'Lora', serif;
+	color: #57838d;
+	text-shadow: 1px 3px 3px #a7d9c9;
+	font-weight: bold;
+	margin-top: 10px;
+	font-size: 40px;
+}
+.recipe1, .recipe2, .recipe3 {
+	float: left;
+	border: 1px solid transparent;
+	padding: 10px;
+	margin: 0 auto;
+}
+div.content {
+	background-color: #cbaacb;
+	border: 1px solid black;
+	padding: 0 20px;
+	margin: 0 auto;
+	color: blanchedalmond;
+	box-shadow: 5px 5px 5px 2px #2F9599;
+
+}
+
+body {
+	background: repeating-radial-gradient(#e3bfb7,#ffdad1);
+	background-size: 800px 800px;
+}
+
+h1 {
+	text-align: center;
+
+}
+.previous:hover, .next:hover {
+
+  	color: #57291f;
+  	text-decoration: none;
+}
+/********LARGE DEVICE**********/
+
+@media only screen and (min-width: 992px)
+{
+	.recipe1, .recipe2, .recipe3 {
+		display: inline-block;
+		width: 33%;
+	}
+}
+
+/********MEDIUM DEVICE**********/
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+	.recipe1, .recipe2, .recipe3 {
+		display: inline-block;
+	}
+	.recipe1, .recipe2 {
+		width: 50%;
+	}
+	.recipe3 {
+		width: 100%;
+	}
+}
+
+/********MOBILE DEVICE**********/
+@media only screen and (max-width: 767px)
+{
+	.recipe1, .recipe2, .recipe3 {
+		display: inline-block;
+		width: 100%;
+	}
+
+}
